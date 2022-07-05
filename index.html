@@ -1,19 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-light mb-5 sticky-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand me-auto" href="#">Cookbook</a>
+            <!-- Nav-Tabs to navigate between the recipes -->
+            <ul class="nav nav-pills nav-justified mb-2 mb-lg-0 d-flex">
+                <li class="nav-item mx-2">
+                    <!-- Show container with id=recipe1-->
+                  <a class="nav-link active" data-bs-toggle="tab" href="#recipe1">Recipe 1</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <!-- Show container with id=recipe2-->
+                  <a class="nav-link" data-bs-toggle="tab" href="#recipe2">Recipe 2</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <!-- Show container with id=recipe3-->
+                  <a class="nav-link" data-bs-toggle="tab" href="#recipe3">Recipe 3</a>
+                </li>
+              </ul>
 
+          </div>
+        </div>
+      </nav>
 
+    <section class="recipes-wrapper tab-content w-100 h-100">
+        <!-- Container with id=recipe1 that contains the recipe-->
+        <div class="container tab-pane container active" id="recipe1">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 title text-center">
+                    <h1 class="h1">Titel</h1>
 
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 description text-center">
+                    <p class="fw-bold">description</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                        alt="" class="img-fluid" />
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Container with id=recipe2 that contains the recipe-->
+        <div class="container tab-pane container fade" id="recipe2">
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-6 title text-center">
+                    <h1 class="h1">Titel2 </h1>
+
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 description text-center">
+                    <p class="fw-bold">description 2</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 image">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=960&q=80"
+                        alt="" class="img-fluid" />
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container with id=recipe3 that contains the recipe-->
+        <div class="container tab-pane container fade" id="recipe3">
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-6 title text-center">
+                    <h1 class="h1">Titel3 </h1>
+
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 description text-center">
+                    <p class="fw-bold">description 3</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6 image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1920px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+                        alt="" class="img-fluid" />
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
