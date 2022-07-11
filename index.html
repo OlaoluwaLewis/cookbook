@@ -1,371 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Roboto:wght@400;500;700&family=Splash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Roboto:wght@400;500;700&family=Splash&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="styles.css">
-        
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <nav class="navbar navbar-expand-lg bg-light mb-5 sticky-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand me-auto" href="#">Cookbook</a>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            
-            <!-- Nav-Tabs to navigate between the recipes -->
-            <ul class="nav nav-pills nav-justified mb-2 mb-lg-0 d-flex col-6">
-                <li class="nav-item mx-2">
-                    <!-- Show container with id=recipe1-->
-                  <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <!-- Show container with id=recipe1-->
-                  <a class="nav-link " data-bs-toggle="tab" href="#recipe1">Recipe 1</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <!-- Show container with id=recipe2-->
-                  <a class="nav-link" data-bs-toggle="tab" href="#recipe2">Jollof Rice</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <!-- Show container with id=recipe3-->
-                  <a class="nav-link" data-bs-toggle="tab" href="#recipe3">Recipe 3</a>
-                </li>
-              </ul>
-          </div>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-auto" href="#">Cookbook</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <!-- Nav-Tabs to navigate between the recipes -->
+          <ul class="nav nav-pills nav-justified mb-2 mb-lg-0 d-flex col-6">
+            <li class="nav-item mx-2">
+              <!-- Show container with id=recipe1-->
+              <a class="nav-link active" data-bs-toggle="tab" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Show container with id=recipe1-->
+              <a class="nav-link" data-bs-toggle="tab" href="#recipe1"
+                >Chana Masala</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Show container with id=recipe2-->
+              <a class="nav-link" data-bs-toggle="tab" href="#recipe2"
+                >Jollof Rice</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <!-- Show container with id=recipe3-->
+              <a class="nav-link" data-bs-toggle="tab" href="#recipe3"
+                >Recipe 3</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <section class="recipes-wrapper tab-content w-100 h-100">
-        <div class="container tab-pane active" id="home">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-6">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/images/jollof6.jpeg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Jollof Rice</h5>
-                              <p>Jollof, or jollof rice, is a rice dish from West Africa. The dish is typically made with long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients and preparation methods vary across different regions.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Third slide label</h5>
-                              <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+      <div class="container tab-pane active" id="home">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-10">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="overlay"></div>
+                <div class="carousel-item active">
+                  <img
+                    src="/images/Chana-Masala.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Chana Masala</h1>
+                    <p>
+                      Chana Masala is a North Indian and Pakistani curry made by
+                      cooking chickpeas (chana) in a onion and tomato base
+                      (masala).
+                    </p>
+                  </div>
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/jollof6.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Jollof Rice</h1>
+                    <p>
+                      Jollof, or jollof rice, is a rice dish from West Africa.
+                      The dish is typically made with long-grain rice, tomatoes,
+                      onions, spices, vegetables and meat in a single pot,
+                      although its ingredients and preparation methods vary
+                      across different regions.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+          </div>
         </div>
-        <!-- Container with id=recipe1 that contains the recipe-->
-        <div class="container tab-pane fade" id="recipe1">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-6 title text-center">
-                    <h1 class="h1">Titel</h1>
-
-                </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center mt-4">
-                <div class="col-6 image">
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                        alt="" class="img-fluid" />
-                </div>
-            </div>
-
-            <div class="row justify-content-center  mt-4">
-                <div class="col-6 description text-center">
-                    <h4 class="fw-bold">description</h4>
-                    <p>text</p>
-
-                </div>
-                <div class="col-6">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Ingredient</th>
-                                <th scope="col">Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <!-- Container with id=recipe2 that contains the recipe-->
-        <div class="container tab-pane fade" id="recipe2">
-            <div class="row justify-content-center align-items-center mt-5">
-                <div class="col-6 title text-center">
-                    <h1 class="h1">Jollof Rice </h1>
-
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center mt-4">
-                <div class="col-6 image">
-                    <img src="/images/jollof6.jpeg" 
-                        alt="" class="img-fluid" />
-                </div>
-            </div>
-            <div class="row justify-content-center  mt-4">
-                <div class="col-6 description text-center">
-                    <h4 class="fw-bold">Description</h4>
-                    <p>Because Jollof Rice is Bae, and much loved South of the Sahara and along the coast of West Africa.
-
-                        Spiced and stewed in a flavorful tomato broth, it is everything from "everyday" to celebration. The classic version is cooked with long-grain rice (Uncle Ben's/Carolina's) and seasoned with Nigerian-style curry powder and dried thyme. Served with fried, ripe plantains which we call dodo and coleslaw, it is everything. Note that the world might consider this a side but in Nigeria, it is the main. :)
-                        
-                        Even more special is Party Rice, a smoky version, cooked over an open fire, layered with smoke, spice, and immeasurable goodness. A few years ago, I cracked the code on approximating the smoky flavor on the stovetop. </p>
-                    <table class="table">
-                        <thead>
-                            <th scope="col">Directions</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>In a blender, combine tomatoes, red poblano (or bell) peppers, chopped onions, and Scotch bonnets with 2 cups of stock, blend till smooth, about a minute or two. You should have roughly 6 cups of blended mix. Pour into a large pot/ pan and bring to the boil then turn down and let simmer, partly covered for 10 - 12 minutes</td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>In a large pan, heat oil and add the sliced onions. Season with a pinch of salt, stir-fry for 2 to 3 minutes, then add the bay leaves, curry powder and dried thyme and a pinch of black pepper for 3 - 4 minutes on medium heat. Then add the tomato paste - stir for another 2 minutes. Add the reduced tomato-pepper-Scotch bonnet mixture, stir, and set on medium heat for 10 to 12 minutes till reduced by half, with the lid partly on. This is the stew that will define the pot.</td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Add 4 cups of the stock to the cooked tomato sauce and bring it to boil for 1 - 2 minutes.
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Add the rinsed rice and butter, stir, cover with a double piece of foil/baking or parchment paper and put a lid on the pan—this will seal in the steam and lock in the flavor. Turn down the heat and cook on the lowest possible heat for 30 minutes, stirring half way through.</td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Stir rice—taste and adjust as required. If rice isn't soft enough/ needs additional cooking, add 1/4 to 1/2 cup of stock or water, stir through and continue to steam, on low till cooked through.</td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>If you like, add sliced onions, fresh tomatoes and the 2nd teaspoon of butter and stir through. Let rest, covered for 5 to 6 minutes.</td>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>To make Party Rice, you'll need one more step. Now Party Rice is essentially Smoky Jollof Rice, traditionally cooked over an open fire. However, you can achieve the same results on the stove top. Here's how: Once the rice is cooked, turn up the heat with the lid on and leave to "burn" for 3 to 5 minutes. You'll hear the rice crackle and snap and it will smell toasted. Turn off the heat and leave with the lid on to "rest" till ready to serve. The longer the lid stays on, the smokier. Let the party begin!</td>
-                                
-                            </tr>
-                        </tbody>
-                    </table>    
-
-                </div>
-                <div class="col-6">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Ingredient</th>
-                                <th scope="col">Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Large Chicken thighs</td>
-                                <td>4 pcs</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Medium Onions</td>
-                                <td>2 pcs</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td colspan="1">Garlic Clove</td>
-                                <td>1 pc</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td colspan="1">Tomatoes</td>
-                                <td>425 grams</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td colspan="1">Chicken broth</td>
-                                <td>200 ml</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Maggi, large</td>
-                                <td>1 pc</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Oil</td>
-                                <td>2 tbsp</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Rice, cooked</td>
-                                <td>4 cups</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Salt</td>
-                                <td>3 pinch</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Pepper</td>
-                                <td>2 pinch</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Pepperoni</td>
-                                <td>3 pcs</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Water</td>
-                                <td>400 ml</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+      </div>
+      <!-- Container with id=recipe1 that contains the recipe-->
+      <div class="container tab-pane fade" id="recipe1">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-8 title text-center">
+            <h2 class="h1">Chana Masala (Indian Chickpea Curry)</h2>
+          </div>
         </div>
 
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-10">
+            <!-- <img src="/images/Chana-Masala.jpg" alt="" class="img-fluid" /> -->
 
-        <!-- Container with id=recipe3 that contains the recipe-->
-        <div class="container tab-pane fade" id="recipe3">
-            <div class="row justify-content-center align-items-center mt-5">
-                <div class="col-6 title text-center">
-                    <h1 class="h1">Titel3 </h1>
-
-                </div>
+            <div class="hovereffect">
+              <img
+                class="img-responsive"
+                src="/images/Chana-Masala.jpg"
+                alt=""
+              />
+              <div class="overlay">
+                <h2>Chana Masala (Indian Chickpea Curry)</h2>
+              </div>
             </div>
-            <div class="row justify-content-center align-items-center mt-4">
-                <div class="col-6 image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1920px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
-                        alt="" class="img-fluid" />
-                </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-6 description text-center">
-                    <h4 class="fw-bold">description</h4>
-                    <p>text</p>
-
-                </div>
-                <div class="col-6">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Ingredient</th>
-                                <th scope="col">Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="1">Larry the Bird</td>
-                                <td>Thornton</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-7 description">
+            <h3 class="fw-bold text-center">Description</h3>
+            <p class="text-center">
+              Chana Masala is a North Indian and Pakistani curry made by cooking
+              chickpeas (chana) in a onion and tomato base (masala).
+            </p>
+            <h3 class="fw-bold text-center mt-4">Directions</h3>
+            <p class="text-left">
+              1. Sauté onion: Sauté the chopped onions along with cumin seeds to
+              form the base (or masala) of the curry. You want to sauté until
+              golden, but not fully brown, because they’ll deepen even more in
+              color once you add the garlic and ginger. If at any point the
+              onions start to stick to the pan or brown unevenly, deglaze with
+              1-2 tablespoons water.
+            </p>
+            <p class="text-left">
+              2. Add garlic, ginger, and green chili pepper: Adding the garlic
+              and ginger at this stage cooks out the raw flavor and allows them
+              to become fragrant. The green chili infuses the curry with a
+              subtle warmth. It would be more fiery if added later in cooking.
+            </p>
+            <p class="text-left">
+              3. Bloom the spices: Chana Masala is quite heavy on spices, which
+              is why you’ll add them early on to extract their flavor into the
+              base of the curry. Again, at any point if they start to stick,
+              deglaze with water.
+            </p>
+            <p class="text-left">
+              4. Sauté the tomatoes: Cook the tomatoes for a few minutes to
+              evaporate their water content and help them disintegrate into the
+              curry.
+            </p>
+            <p class="text-left">
+              5. Add water, cover, and cook: Even though the canned chickpeas
+              are technically cooked, they need to simmer in the curry to soften
+              and absorb the flavors.
+            </p>
+
+            <p class="text-left">
+              6. Sauté down: Sauté for another 2-3 minutes to desired
+              consistency. Use a wooden spoon to slightly crush chickpeas to
+              thicken and enhance their texture. Keep in mind the curry will
+              thicken even more as it cools.
+            </p>
+            <p class="text-left">
+              7. Garnish: Brighten the flavors with a sprinkling of garam
+              masala, a squeeze of lemon juice, and crunchy julienned ginger if
+              you’d like.
+            </p>
+          </div>
+
+          <div class="col-5">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Ingredient</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-success">
+                  <td>Chickpeas</td>
+                  <td>2 cans (around 15-oz each)</td>
+                </tr>
+                <tr>
+                  <td>Tomatoes</td>
+                  <td>2 medium (~300 g)</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Ground spices and cumin</td>
+                  <td>1 tsp</td>
+                </tr>
+                <tr>
+                  <td>Oil</td>
+                  <td>1/4 cup</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Ginger</td>
+                  <td>1-inch (~1 tbsp)</td>
+                </tr>
+                <tr>
+                  <td>Garlic</td>
+                  <td>5 (~1 tbsp) garlic cloves</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Salt</td>
+                  <td>1 1/4 tsp</td>
+                </tr>
+                <tr>
+                  <td>Pepper, Cilantro and lemon</td>
+                  <td>1/4 tsp</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Onions and green chilli</td>
+                  <td>medium (~220-260 g)</td>
+                </tr>
+              </tbody>
+            </table>
+            <button
+              onclick="myFunction()"
+              class="btn btn-outline-success btn-lg"
+              id="shareBtn"
+            >
+              Share
+            </button>
+            <div class="mt-3" id="shareBtnWrapper"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Container with id=recipe2 that contains the recipe-->
+      <div class="container tab-pane fade" id="recipe2">
+        <div class="row justify-content-center align-items-center mt-5">
+          <div class="col-6 title text-center">
+            <h1 class="h1">Jollof Rice</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-6 image">
+            <img src="/images/jollof6.jpeg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-6 description text-center">
+            <h4 class="fw-bold">Description</h4>
+            <p>
+              Because Jollof Rice is Bae, and much loved South of the Sahara and
+              along the coast of West Africa. Spiced and stewed in a flavorful
+              tomato broth, it is everything from "everyday" to celebration. The
+              classic version is cooked with long-grain rice (Uncle
+              Ben's/Carolina's) and seasoned with Nigerian-style curry powder
+              and dried thyme. Served with fried, ripe plantains which we call
+              dodo and coleslaw, it is everything. Note that the world might
+              consider this a side but in Nigeria, it is the main. :) Even more
+              special is Party Rice, a smoky version, cooked over an open fire,
+              layered with smoke, spice, and immeasurable goodness. A few years
+              ago, I cracked the code on approximating the smoky flavor on the
+              stovetop.
+            </p>
+            <table class="table">
+              <thead>
+                <th scope="col">Directions</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    In a blender, combine tomatoes, red poblano (or bell)
+                    peppers, chopped onions, and Scotch bonnets with 2 cups of
+                    stock, blend till smooth, about a minute or two. You should
+                    have roughly 6 cups of blended mix. Pour into a large pot/
+                    pan and bring to the boil then turn down and let simmer,
+                    partly covered for 10 - 12 minutes
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    In a large pan, heat oil and add the sliced onions. Season
+                    with a pinch of salt, stir-fry for 2 to 3 minutes, then add
+                    the bay leaves, curry powder and dried thyme and a pinch of
+                    black pepper for 3 - 4 minutes on medium heat. Then add the
+                    tomato paste - stir for another 2 minutes. Add the reduced
+                    tomato-pepper-Scotch bonnet mixture, stir, and set on medium
+                    heat for 10 to 12 minutes till reduced by half, with the lid
+                    partly on. This is the stew that will define the pot.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    Add 4 cups of the stock to the cooked tomato sauce and bring
+                    it to boil for 1 - 2 minutes.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    Add the rinsed rice and butter, stir, cover with a double
+                    piece of foil/baking or parchment paper and put a lid on the
+                    pan—this will seal in the steam and lock in the flavor. Turn
+                    down the heat and cook on the lowest possible heat for 30
+                    minutes, stirring half way through.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    Stir rice—taste and adjust as required. If rice isn't soft
+                    enough/ needs additional cooking, add 1/4 to 1/2 cup of
+                    stock or water, stir through and continue to steam, on low
+                    till cooked through.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    If you like, add sliced onions, fresh tomatoes and the 2nd
+                    teaspoon of butter and stir through. Let rest, covered for 5
+                    to 6 minutes.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>
+                    To make Party Rice, you'll need one more step. Now Party
+                    Rice is essentially Smoky Jollof Rice, traditionally cooked
+                    over an open fire. However, you can achieve the same results
+                    on the stove top. Here's how: Once the rice is cooked, turn
+                    up the heat with the lid on and leave to "burn" for 3 to 5
+                    minutes. You'll hear the rice crackle and snap and it will
+                    smell toasted. Turn off the heat and leave with the lid on
+                    to "rest" till ready to serve. The longer the lid stays on,
+                    the smokier. Let the party begin!
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Ingredient</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Large Chicken thighs</td>
+                  <td>4 pcs</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Medium Onions</td>
+                  <td>2 pcs</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="1">Garlic Clove</td>
+                  <td>1 pc</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="1">Tomatoes</td>
+                  <td>425 grams</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="1">Chicken broth</td>
+                  <td>200 ml</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Maggi, large</td>
+                  <td>1 pc</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Oil</td>
+                  <td>2 tbsp</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Rice, cooked</td>
+                  <td>4 cups</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Salt</td>
+                  <td>3 pinch</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Pepper</td>
+                  <td>2 pinch</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Pepperoni</td>
+                  <td>3 pcs</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Water</td>
+                  <td>400 ml</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container with id=recipe3 that contains the recipe-->
+      <div class="container tab-pane fade" id="recipe3">
+        <div class="row justify-content-center align-items-center mt-5">
+          <div class="col-6 title text-center">
+            <h1 class="h1">Titel3</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-4">
+          <div class="col-6 image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1920px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-6 description text-center">
+            <h4 class="fw-bold">description</h4>
+            <p>text</p>
+          </div>
+          <div class="col-6">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Ingredient</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="1">Larry the Bird</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="1">Larry the Bird</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="1">Larry the Bird</td>
+                  <td>Thornton</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <script>
+      //Bootstrap alert implementation
+      const alertPlaceholder = document.getElementById("shareBtnWrapper");
 
+      const alert = (message, type) => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [
+          `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          "</div>",
+        ].join("");
+
+        alertPlaceholder.append(wrapper);
+      };
+
+      const alertTrigger = document.getElementById("shareBtn");
+      if (alertTrigger) {
+        alertTrigger.addEventListener("click", () => {
+          alert("Thanks for sharing!", "success");
+        });
+      }
+      //Bootstrap alert implementation end
+
+      //classic js alert with button onclick
+      //   function myFunction() {
+      //     alert("Hello! I am an alert box!");
+      // }
+    </script>
+  </body>
 </html>
